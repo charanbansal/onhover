@@ -1,13 +1,69 @@
-﻿.abc{
-div {
-    display: none;
+﻿body {
+    padding: 50px;
 }
- a:hover + div {
+ul {
+    background: url(http://cheap-kettlebells.com/w.png) no-repeat right top;
+    border: 1px solid #444;
+    display: inline-block;
+    height: 301px;
+    position: relative;
+    width: 400px;
+}
+li {
+    font: bold 16px/100px sans-serif;
+    height: 100px;
+}
+a {
+    border-right: 1px solid #444;
+    border-top: 1px solid #444;
+    color: red;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 99px;
+}
+li:first-child a {
+    border-top: none;
+}
+li:nth-child(2) a {
+    color: blue;
+}
+li:nth-child(3) a {
+    color: green;
+}
+a:hover {
+    background: red;
+    color: #fff;
+}
+li:nth-child(2) a:hover {
+    background: blue;
+    color: #fff;
+}
+li:nth-child(3) a:hover {
+    background: green;
+    color: #fff;
+}
+img {
+    background: red;
+    display: none;
+    height: 301px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+li:nth-child(2) img {
+    background: blue;
+}
+li:nth-child(3) img {
+    background: green;
+}
+a:hover + img,
+img:hover {
     display: block;
     border: 1px solid black;
     position: relative;
     left: 700px;
     height: 500px;
     width: 500px;
-}
 }
