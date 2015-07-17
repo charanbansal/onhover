@@ -1,4 +1,5 @@
-﻿div {
+﻿.abc{
+div {
     display: none;
 }
  a:hover + div {
@@ -8,4 +9,5 @@
     left: 700px;
     height: 500px;
     width: 500px;
+}
 }
